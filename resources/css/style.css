@@ -1,0 +1,89 @@
+/* Fontamilies */
+
+/* Universal Style */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+}
+
+.button_container {
+}
+
+.button {
+  background-color: gray;
+  padding: 0.5rem 0;
+  text-align: center;
+
+}
+
+.grey {
+  color: gray;
+}
+
+/* Header and Navigation */
+
+header {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+}
+
+.header_contents {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.header_contents span {
+  font-style: bold;
+}
+
+nav a {
+  padding-left: 1rem;
+}
+
+/* Banner */
+
+#banner {
+  background-color: gainsboro;
+}
+
+#banner .img_container {
+  width: 60%;
+  margin: 0 1.5rem;
+}
+
+#banner .img_container img {
+  width: 100%;
+}
+
+#banner h1 {
+  font-size: 3rem;
+  font-style: bold;
+  padding: 1rem 0;
+}
+
+#banner_text {
+  border: 2px solid green;
+  display: inline-block;
+  width: 30%;
+}
+/* Information */
+
+/* Course Work */
+
+/* Research and Exhibits  */
+
+/* Footer */
