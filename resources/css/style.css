@@ -1,6 +1,4 @@
-/* Fontamilies */
-
-/* Universal Style */
+/* Document */
 
 html {
   font-size: 16px;
@@ -10,15 +8,30 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* Universal Containers/Buttons */
+
 .container {
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
 }
 
+.img_container {
+  width: 60%;
+  margin: 0 1.5rem;
+}
+
+.img_container img {
+  width: 100%;
+}
+
+.text {
+  width: 40%;
+}
+
 .button {
   color: white;
-  background-color: #484848;
+  background-color:  #00275E;
   padding: 0.5rem 0;
   text-align: center;
 }
@@ -26,12 +39,43 @@ body {
 .button a {
   color: white;
   font-size: 1rem;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
 }
 
-.grey {
+/* Universal Styles */
+
+h1 {
+  color: #00275E;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-style: bold;
+  padding: .75rem 0;
+}
+
+h2 {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: .75rem 0;
+}
+
+p {
+  font-family: Cabin;
+  font-size: 1rem;
+  padding: .75rem 0;
+}
+
+.bold {
+  font-weight: 600;
+  color: #00275E;
+}
+
+.gray {
   color: gray;
 }
+
+
 
 /* Header and Navigation */
 
@@ -55,7 +99,10 @@ header {
 
 nav a {
   padding-left: 1rem;
+  color: #00275E;
 }
+
+
 
 /* Banner */
 
@@ -63,36 +110,76 @@ nav a {
   background-color: gainsboro;
 }
 
-#banner .img_container {
-  width: 60%;
-  margin: 0 1.5rem;
+#banner_text {
+  display: inline-block;
 }
 
-#banner .img_container img {
+
+
+/* Information */
+
+#information {
+  background-color: whitesmoke;
+}
+
+#information h1 {
+  top-margin: 1.5rem;
+}
+
+#information h2 {
+  padding-top: 0;
+}
+
+#info_column{
+  width: 40%;
+  border-left: 2px solid gainsboro;
+  margin-top: -2rem;
+
+}
+
+.info_box {
+  border-bottom: 2px solid gainsboro;
+  display: flex;
+  align-items: center;
+}
+
+.info_box:first-child{
+  margin-top: 2rem;
+}
+
+.info_box:last-child {
+  background-color: gainsboro;
+}
+
+.img_container_column {
+  width: 35%;
+  margin: 1rem;
+}
+
+.img_container_column img {
   width: 100%;
 }
 
-#banner h1 {
-  font-family: "Playfair Display";
-  font-weight: 700;
-  font-size: 2.5rem;
-  font-style: bold;
-  padding: 1rem 0;
+.info_text {
+  width: 65%;
 }
 
-#banner h2 {
-  font-family: "Open Sans";
-  font-style: bold;
-  font-weight: 400;
-  font-size: 1.25rem;
-  padding: 1rem 0;
+.info_text h2 {
+  color: #00275E;
+  font-weight: bold;
 }
 
-#banner_text {
+.info_text a {
+  color: gray;
 }
-/* Information */
 
-/* Course Work */
+.info_text a:hover {
+  color: #6D98AB;
+}
+
+
+
+/* Courses */
 
 /* Research and Exhibits  */
 
