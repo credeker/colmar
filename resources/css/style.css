@@ -1,7 +1,7 @@
 /* Document */
 
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
@@ -48,7 +48,7 @@ h1 {
   color: #00275E;
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-style: bold;
   padding: .75rem 0;
 }
@@ -56,13 +56,13 @@ h1 {
 h2 {
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 2rem;
   padding: .75rem 0;
 }
 
 p {
-  font-family: Cabin;
-  font-size: 1rem;
+  font-family: "Cabin";
+  font-size: 1.5rem;
   padding: .75rem 0;
 }
 
@@ -134,6 +134,7 @@ nav a {
   width: 40%;
   border-left: 2px solid gainsboro;
   margin-top: -2rem;
+  margin-bottom: -2rem;
 
 }
 
@@ -177,9 +178,48 @@ nav a {
   color: #6D98AB;
 }
 
-
-
 /* Courses */
+
+#courses {
+  background-color: #E8E8E8;
+}
+
+#courses_section_container {
+  margin: 0 auto;
+}
+
+#courses_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+#courses.container {
+}
+
+#courses h1 {
+  text-align: center;
+}
+
+.rectangle_content_box {
+  width: 28%;
+  /* 28% is double percentage width of sqaure box */
+  margin-top: 2rem;
+}
+
+.rectangle_image_container img{
+  width: 100%;
+}
+
+.rectangle_text {
+  background-color: white;
+  padding: 1rem 0 0 1rem;
+}
+
+.middle {
+  margin: 2rem 2rem;
+}
 
 /* Research and Exhibits  */
 
