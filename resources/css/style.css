@@ -48,7 +48,7 @@ h1 {
   color: #00275E;
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-style: bold;
   padding: .75rem 0;
 }
@@ -56,13 +56,14 @@ h1 {
 h2 {
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.75rem;
   padding: .75rem 0;
 }
 
 p {
   font-family: "Cabin";
   font-size: 1.5rem;
+  font-weight: lighter;
   padding: .75rem 0;
 }
 
@@ -75,6 +76,14 @@ p {
   color: gray;
 }
 
+.whitesmoke {
+  background-color: whitesmoke;
+}
+
+.center {
+  margin: 0 auto;
+}
+
 
 
 /* Header and Navigation */
@@ -85,6 +94,7 @@ header {
   align-items: center;
   justify-content: space-between;
   margin: 0 1.5rem;
+  font-size: 1.25rem;
 }
 
 .header_contents {
@@ -195,9 +205,6 @@ nav a {
   width: 100%;
 }
 
-#courses.container {
-}
-
 #courses h1 {
   text-align: center;
 }
@@ -214,7 +221,7 @@ nav a {
 
 .rectangle_text {
   background-color: white;
-  padding: 1rem 0 0 1rem;
+  padding: 1rem;
 }
 
 .middle {
@@ -223,4 +230,42 @@ nav a {
 
 /* Research and Exhibits  */
 
+#exhibit_container {
+  display: flex;
+}
+
+#exhibit h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#thesis_column {
+}
+
+#exhibit .info_box:first-child{
+  background-color: gainsboro;
+  margin-top: 0;
+}
+
+#exhibit .info_box:last-child {
+  background-color: whitesmoke;
+}
+
+
+
 /* Footer */
+
+footer {
+  border-top: 2px solid gainsboro;
+  padding: 1.5rem;
+
+}
+
+#footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a:last-child {
+  padding-left: 1rem;
+}
