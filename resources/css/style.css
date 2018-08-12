@@ -1,7 +1,7 @@
 /* Document */
 
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body {
@@ -11,8 +11,7 @@ body {
 /* Universal Containers/Buttons */
 
 .container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
   display: flex;
 }
 
@@ -32,13 +31,15 @@ body {
 .button {
   color: white;
   background-color:  #00275E;
-  padding: 0.5rem 0;
-  text-align: center;
+  padding: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button a {
   color: white;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -61,29 +62,38 @@ h2 {
 }
 
 p {
-  font-family: "Cabin";
-  font-size: 1.5rem;
+  font-family: "Open Sans";
+  font-size: 1.25rem;
   font-weight: lighter;
+  line-height: 1.5rem;
   padding: .75rem 0;
-}
-
-.bold {
-  font-weight: 600;
-  color: #00275E;
-}
-
-.gray {
-  color: gray;
-}
-
-.whitesmoke {
-  background-color: whitesmoke;
 }
 
 .center {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1110px) and (min-width: 886px){
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .info_box h2 {
+    padding: 0;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .rectangle_content_box p {
+    padding-bottom: 0;
+  }
+}
 
 
 /* Header and Navigation */
@@ -107,11 +117,35 @@ header {
   font-style: bold;
 }
 
+.bold {
+  font-weight: 600;
+  color: #00275E;
+}
+
+.gray {
+  color: gray;
+}
+
 nav a {
   padding-left: 1rem;
   color: #00275E;
 }
 
+#mobile_nav {
+  display: none;
+}
+
+@media only screen and (max-width: 700px){
+  .header_contents {
+    display: none;
+  }
+
+  #mobile_nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
 
 
 /* Banner */
@@ -121,9 +155,10 @@ nav a {
 }
 
 #banner_text {
-  display: inline-block;
-}
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
 
 
 /* Information */
@@ -224,11 +259,23 @@ nav a {
   padding: 1rem;
 }
 
+.rectangle_text h2 {
+  color:  #00275E;
+}
+
+.rectangle_text p {
+  color: gray;
+}
+
 .middle {
   margin: 2rem 2rem;
 }
 
 /* Research and Exhibits  */
+
+#exhibit {
+  background-color: whitesmoke;
+}
 
 #exhibit_container {
   display: flex;
@@ -249,6 +296,7 @@ nav a {
 
 #exhibit .info_box:last-child {
   background-color: whitesmoke;
+  border-left: 2px solid gainsboro;
 }
 
 
@@ -268,4 +316,45 @@ footer {
 
 footer a:last-child {
   padding-left: 1rem;
+
+}
+
+/* Breakpoint--Less than 885px */
+
+@media only screen and (max-width: 885px) {
+
+
+
+/* Banner */
+
+/* Information */
+
+/* Courses */
+
+/* Research and Exhibit */
+
+#exhibit_container #thesis_column,
+#exhibit_video h2,
+#exhibit_video p {
+  display: none;
+}
+
+.img_container {
+  width: 100%;
+}
+
+
+
+
+
+}
+
+/* Footer */
+
+footer .two {
+  display: none;
+}
+
+
+
 }
