@@ -50,7 +50,6 @@ h1 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 3.5rem;
-  font-style: bold;
   padding: .75rem 0;
 }
 
@@ -73,7 +72,11 @@ p {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 1110px) and (min-width: 886px){
+a:hover {
+  color: #6D98AB;
+}
+
+@media only screen and (max-width: 1026px) and (min-width: 761px){
   h1 {
     font-size: 2.5rem;
   }
@@ -160,6 +163,11 @@ nav a {
   justify-content: center;
  }
 
+ #banner a:hover {
+   color: white;
+ }
+
+
 
 /* Information */
 
@@ -219,9 +227,22 @@ nav a {
   color: gray;
 }
 
-.info_text a:hover {
+a:hover {
   color: #6D98AB;
 }
+
+#orientation_mobile {
+  display: none;
+}
+
+#campus_mobile {
+  display: none;
+}
+
+#guest_lecture_mobile {
+  display: none;
+}
+
 
 /* Courses */
 
@@ -286,9 +307,6 @@ nav a {
   padding-bottom: 2rem;
 }
 
-#thesis_column {
-}
-
 #exhibit .info_box:first-child{
   background-color: gainsboro;
   margin-top: 0;
@@ -319,17 +337,111 @@ footer a:last-child {
 
 }
 
-/* Breakpoint--Less than 885px */
+/* Breakpoint--Less than 760px */
 
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 760px) {
 
+/* Univerisal Styles */
+.container {
+ border-bottom: 2px solid gainsboro;
+ padding:1rem;;
 
+}
+
+.container .mobile_container{
+  padding: 0;
+}
+
+.text {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.img_container {
+  width: 100%;
+  margin:0;
+}
 
 /* Banner */
+#banner {
+  display: block;
+}
+
+#banner_text {
+  display: block;
+  width: 100%;
+}
 
 /* Information */
 
+#information_pullquote {
+  display: none;
+}
+
+#orientation {
+  display: none;
+}
+
+#orientation_mobile {
+  display: block;
+}
+
+#campus {
+  display: none;
+}
+
+#campus_mobile{
+  display: block;
+}
+
+#guest_lecture {
+  display: none;
+}
+
+#guest_lecture_mobile {
+  display: block;
+}
+
+#info_column {
+
+  width: 100%;
+  border-left: none;
+  margin: 0;
+}
+
+.info_box {
+  display: block;
+  border: none;
+}
+
+.img_container_column {
+  width: 100%;
+  margin-left: 0;
+}
+
+.info_box:last-child {
+  background-color: whitesmoke;
+}
+
 /* Courses */
+
+#courses .rectangle_image_container,
+#courses p {
+  display: none;
+}
+
+#courses_container {
+  display: block;
+  width: 100%;
+  border: 2px solid blue;
+}
+
+.rectangle_content_box {
+  padding-top: .5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
 
 /* Research and Exhibit */
 
@@ -339,22 +451,11 @@ footer a:last-child {
   display: none;
 }
 
-.img_container {
-  width: 100%;
-}
-
-
-
-
-
-}
-
 /* Footer */
 
 footer .two {
   display: none;
 }
-
 
 
 }
