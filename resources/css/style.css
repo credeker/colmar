@@ -65,7 +65,7 @@ p {
   font-size: 1.25rem;
   font-weight: lighter;
   line-height: 1.5rem;
-  padding: .75rem 0;
+  padding: .5rem 0;
 }
 
 .center {
@@ -76,6 +76,11 @@ a:hover {
   color: #6D98AB;
 }
 
+a h2:hover{
+  color: #6D98AB;
+}
+
+/* Breakpoint - Universal Styles for Tablets */
 @media only screen and (max-width: 1026px) and (min-width: 761px){
   h1 {
     font-size: 2.5rem;
@@ -91,6 +96,11 @@ a:hover {
 
   p {
     font-size: 1rem;
+  }
+
+  #courses p {
+    font-size: .85rem;
+    padding: .25rem 0;
   }
 
   .rectangle_content_box p {
@@ -137,6 +147,8 @@ nav a {
 #mobile_nav {
   display: none;
 }
+
+/* Breakpoint, Replace Navigation Text with Icons */
 
 @media only screen and (max-width: 700px){
   .header_contents {
@@ -337,7 +349,8 @@ footer a:last-child {
 
 }
 
-/* Breakpoint--Less than 760px */
+
+/* Breakpoint - For Browser Widths Less than 760px */
 
 @media only screen and (max-width: 760px) {
 
@@ -432,8 +445,10 @@ footer a:last-child {
 
 #courses_container {
   display: block;
+}
+
+#courses_column {
   width: 100%;
-  border: 2px solid blue;
 }
 
 .rectangle_content_box {
